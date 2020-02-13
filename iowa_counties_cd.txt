@@ -1,0 +1,104 @@
+COUNTY	DISTRICT	POPULATION
+Allamakee	1	14,330
+Benton	1	26,076
+Black Hawk	1	131,090
+Bremer	1	24,276
+Buchanan	1	20,958
+Clayton	1	18,129
+Delaware	1	17,764
+Dubuque	1	93,653
+Fayette	1	20,880
+Howard	1	9,566
+Iowa	1	16,355
+Jackson	1	19,848
+Jones	1	20,638
+Linn	1	211,226
+Marshall	1	40,648
+Mitchell	1	10,776
+Poweshiek	1	18,914
+Tama	1	17,767
+Winneshiek	1	21,056
+Worth	1	7,598
+Appanoose	2	12,887
+Cedar	2	18,499
+Clarke	2	9,286
+Clinton	2	49,116
+Davis	2	8,753
+Decatur	2	8,457
+Des Moines	2	40,325
+Henry	2	20,145
+Jasper	2	36,842
+Jefferson	2	16,843
+Johnson	2	130,882
+Keokuk	2	10,511
+Lee	2	35,862
+Louisa	2	11,387
+Lucas	2	8,898
+Mahaska	2	22,381
+Marion	2	33,309
+Monroe	2	7,970
+Muscatine	2	42,745
+Scott	2	165,224
+Van Buren	2	7,570
+Wapello	2	35,625
+Washington	2	21,704
+Wayne	2	6,403
+Adair	3	7,682
+Adams	3	4,029
+Cass	3	13,956
+Dallas	3	66,135
+Fremont	3	7,441
+Guthrie	3	10,954
+Madison	3	15,679
+Mills	3	15,059
+Montgomery	3	10,740
+Page	3	15,932
+Polk	3	430,640
+Pottawattamie	3	93,158
+Ringgold	3	5,131
+Taylor	3	6,317
+Union	3	12,534
+Warren	3	46,225
+Audubon	4	6,119
+Boone	4	26,306
+Buena Vista	4	20,260
+Butler	4	14,867
+Calhoun	4	9,670
+Carroll	4	20,816
+Cerro Gordo	4	44,151
+Cherokee	4	12,072
+Chickasaw	4	12,439
+Clay	4	16,667
+Crawford	4	17,096
+Dickinson	4	16,667
+Emmet	4	10,302
+Floyd	4	16,303
+Franklin	4	10,680
+Greene	4	9,336
+Grundy	4	12,453
+Hamilton	4	15,673
+Hancock	4	11,341
+Hardin	4	17,534
+Harrison	4	14,928
+Humboldt	4	9,815
+Ida	4	7,089
+Kossuth	4	15,543
+Lyon	4	11,581
+Monona	4	9,243
+O'Brien	4	14,398
+Osceola	4	6,462
+Palo Alto	4	9,421
+Plymouth	4	24,986
+Pocahontas	4	7,310
+Sac	4	10,350
+Shelby	4	12,167
+Sioux	4	33,704
+Story	4	89,542
+Webster	4	38,013
+Winnebago	4	10,866
+Woodbury	4	102,172
+Wright	4	13,229
+CD1 Satellite	1	0
+CD2 Satellite	2	0
+CD3 Satellite	3	0
+CD4 Satellite	4	0
