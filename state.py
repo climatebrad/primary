@@ -53,8 +53,6 @@ def allocate_delegates(candidate_votes, delegate_count, verbose=False, full_resu
                 'del_fracs': del_fracs, 
                 'delegates': delegates}
     return delegates
-
-
     
 class State:
     def __init__(self, pleos, at_large_dels, is_caucus=False):
@@ -95,7 +93,8 @@ class State:
                         atlarge['delegates'],
                         pleos['delegates'] + atlarge['delegates']],
                        axis=1)
-        df.columns=['%','PLEO Delegates (unrounded)', 'PLEO Delegates','At-Large Delegates (unrounded)', 'At-Large Delegates', 'Delegates']
+        df.columns=['%','PLEO Delegates (unrounded)', 'PLEO Delegates',
+                    'At-Large Delegates (unrounded)', 'At-Large Delegates', 'Delegates']
         df = df[df.Delegates > 0].sort_values(by='%',ascending=False)
         return df
     
@@ -107,14 +106,52 @@ class State:
             state_dels_full = self.display_state_dels()
             self._state_dels = state_dels_full.Delegates
         return self._state_dels
+    
+    def display_dist_dels(self):
+        """Calculate and display district-level delegate allocation"""
+        if self.is_caucus:
+            votes = self.dist_sdes
+            viable_votes = self.viable_dist_sdes
+        else:
+            votes = self.dist_votes
+            viable_votes = self.viable_dist_votes
+        dist_dels = pd.concat([allocate_delegates(votes[dist],
+                                             self.dist_del_count.query(f'District == {dist}').Delegates.iloc[0])
+                          for dist in self.dist_del_count.District], 
+                         axis=1, 
+                         sort=False).fillna(0).astype(int)
+        dist_dels['Total'] = dist_dels.sum(axis=1)
+        return dist_dels
+    
+    @property
+    def dist_dels(self):
+        return self.display_dist_dels()
+    
+    def display_all_dels(self):
+        all_dels = (self.display_state_dels()
+                    .rename(columns={'Delegates':'State-Level Delegates'})
+                    .join(self.display_dist_dels()
+                          .rename(columns={'Total':'District Delegates'})))
+        all_dels['Total'] = all_dels['State-Level Delegates'] + all_dels['District Delegates']
+        return all_dels
+    
+    @property
+    def all_dels(self):
+        return self.state_dels.add(self.dist_dels.Total, fill_value=0).astype(int).sort_values(ascending=False)
+
+    
 
 class Iowa(State):
+    """Iowa Caucuses"""
     def __init__(self):
         super().__init__(pleos=5, at_large_dels=9, is_caucus=True)
         self._counties = None
         self._state_dels = None
     
-    dist_del_count = pd.DataFrame([[1, 7], [2, 7], [3, 8], [4, 5]], columns=(["District","Delegates"]))
+    dist_del_count = pd.DataFrame([[1, 7], 
+                                   [2, 7], 
+                                   [3, 8], 
+                                   [4, 5]], columns=(["District","Delegates"]))
     
     @property 
     def results(self):
@@ -208,40 +245,10 @@ class Iowa(State):
     def dist_sdes(self):
         return self.display_dist_sdes(rounding=False)
     
+    @property
     def viable_dist_sdes(self):
-        return self.dist_sdes[self.dist_sdes > self.viability_threshold(self.dist_sdes.sum())]
-    
-    # dist_pct = dist_sdes.div(dist_sdes.sum(axis=0), axis=1)
-    
-    def allocate_dist_dels(dist):
-#        df = pd.concat([dist_pct[[dist]], dist_pct[[dist]] > self.viability_threshold(self.dist_sdes[, 
-#                    (dist_pct[[dist]] * dist_delegates.query(f'District == {dist}').Delegates.tolist()[0]).round().astype(int)], 
-#                   axis=1)
-#        df.columns=['%','Viable','Delegates']
-#        return df
-        pass
+        return self.dist_sdes[self.dist_sdes > self.dist_sdes.sum().apply(self.viability_threshold)]
 
-    def display_dist_dels(self):
-        dist_dels = pd.concat([allocate_delegates(self.dist_sdes[dist],
-                                             self.dist_del_count.query(f'District == {dist}').Delegates.iloc[0])
-                          for dist in self.dist_del_count.District], 
-                         axis=1, 
-                         sort=False).fillna(0).astype(int)
-        dist_dels['Total'] = dist_dels.sum(axis=1)
-        return dist_dels
     
-    @property
-    def dist_dels(self):
-        return self.display_dist_dels()
+
     
-    def display_all_dels(self):
-        all_dels = (self.display_state_dels()
-                    .rename(columns={'Delegates':'State-Level Delegates'})
-                    .join(self.display_dist_dels()
-                          .rename(columns={'Total':'District Delegates'})))
-        all_dels['Total'] = all_dels['State-Level Delegates'] + all_dels['District Delegates']
-        return all_dels
-    
-    @property
-    def all_dels(self):
-        return self.state_dels.add(self.dist_dels.Total, fill_value=0).astype(int).sort_values(ascending=False)
