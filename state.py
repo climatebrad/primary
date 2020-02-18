@@ -132,9 +132,9 @@ class State:
         all_dels = (self.display_state_dels()
                     .rename(columns={'Delegates':'State-Level Delegates'})
                     .join(self.display_dist_dels()
-                          .rename(columns={'Total':'District Delegates'})))
-        all_dels['Total'] = all_dels['State-Level Delegates'] + all_dels['District Delegates']
-        return all_dels
+                          .rename(columns={'Total':'District Delegates'}), how='outer'))
+        all_dels['Total'] = all_dels['State-Level Delegates'].add(all_dels['District Delegates'], fill_value=0)
+        return all_dels.sort_values(by='Total', ascending=False)
     
     @property
     def all_dels(self):
@@ -214,7 +214,8 @@ class Iowa(State):
     def display_results(self):
         """Dataframe of results"""
         results = self.results
-        return pd.concat([results.loc[:,(slice(None),'First Expression')].sum().droplevel(1),
+        return pd.concat(
+            [results.loc[:,(slice(None),'First Expression')].sum().droplevel(1),
            (results.loc[:,(slice(None),'First Expression')].sum().droplevel(1) / results.loc[:,(slice(None),'First Expression')].sum().sum() * 100).round(1),
            results.loc[:,(slice(None),'Final Expression')].sum().droplevel(1),
            (results.loc[:,(slice(None),'Final Expression')].sum().droplevel(1) / results.loc[:,(slice(None),'Final Expression')].sum().sum() * 100).round(1),
