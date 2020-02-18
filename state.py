@@ -7,7 +7,8 @@ import pandas as pd
 import numpy as np
 
 def allocate_delegates(candidate_votes, delegate_count, verbose=False, full_results=False):
-    """Follow https://www.thegreenpapers.com/P20/D-Math.phtml algorithm. This excludes re-assignment of people supporting non-viable candidates"""
+    """Follow https://www.thegreenpapers.com/P20/D-Math.phtml algorithm. 
+    This excludes re-assignment of people supporting non-viable candidates"""
     unallocated_delegates = delegate_count
     # Step 1: Tabulate the percentage of the vote that each preference receives.
     candidate_pcts = candidate_votes / candidate_votes.sum()
@@ -155,7 +156,8 @@ class Iowa(State):
     
     @property 
     def results(self):
-        """dataframe with caucus results"""
+        """dataframe with caucus results. 
+        Parsing via https://github.com/TomAugspurger/idp-results/blob/master/idb.ipynb"""
         if self._results is None:
             url = "https://results.thecaucuses.org"
             r = requests.get(url)
