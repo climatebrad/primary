@@ -211,17 +211,35 @@ class Iowa(State):
             self._counties = pd.read_csv('iowa_counties_cd.txt', dtype={'DISTRICT': int}, sep='\t')
         return self._counties
     
+    def results_column(self, caucus_round):
+        return self.results.loc[:,(slice(None), caucus_round)].sum()
+    
+    def round_results_pct(self, caucus_round):
+        return (self.results_column(caucus_round).droplevel(1) / self.results_column(caucus_round).sum() * 100).round(1)
+    
     def display_results(self):
         """Dataframe of results"""
         results = self.results
-        return pd.concat(
-            [results.loc[:,(slice(None),'First Expression')].sum().droplevel(1),
-           (results.loc[:,(slice(None),'First Expression')].sum().droplevel(1) / results.loc[:,(slice(None),'First Expression')].sum().sum() * 100).round(1),
-           results.loc[:,(slice(None),'Final Expression')].sum().droplevel(1),
-           (results.loc[:,(slice(None),'Final Expression')].sum().droplevel(1) / results.loc[:,(slice(None),'Final Expression')].sum().sum() * 100).round(1),
-           results.loc[:,(slice(None),'SDE')].sum().droplevel(1).astype(int),
-           (results.loc[:,(slice(None),'SDE')].sum().droplevel(1) / results.loc[:,(slice(None),'SDE')].sum().sum() * 100).round(1)], 
-          axis=1).rename(columns={0:'First',1:'%',2:'Final',3:'%',4:'Total S.D.E.s',5:'%'}).sort_values(by='Final', ascending=False)
+        return (pd.concat(
+            [
+                self.results_column('First Expression').droplevel(1),
+                self.round_results_pct('First Expression'),
+                self.results_column('Final Expression').droplevel(1),
+                self.round_results_pct('Final Expression'),
+                self.results_column('SDE').droplevel(1).astype(int),
+                self.round_results_pct('SDE'),
+                self.all_dels
+            ],
+            axis=1, sort=False)
+                .fillna(0)
+                .rename(columns={0 : 'First', 
+                                 1 : '%', 
+                                 2 : 'Final', 
+                                 3 : '%', 
+                                 4 : 'Total S.D.E.s', 
+                                 5 : '%', 6 : 'Delegates'})
+                .astype({'Delegates' : int})
+                .sort_values(by='Final', ascending=False))
   
     @property
     def sdes(self):
