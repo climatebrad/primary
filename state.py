@@ -133,7 +133,9 @@ class State:
                     .rename(columns={'Delegates':'State-Level Delegates'})
                     .join(self.display_dist_dels()
                           .rename(columns={'Total':'District Delegates'}), how='outer'))
-        all_dels['Total'] = all_dels['State-Level Delegates'].add(all_dels['District Delegates'], fill_value=0)
+        all_dels['Total'] = (all_dels['State-Level Delegates']
+                             .add(all_dels['District Delegates'], fill_value=0)
+                             .astype(int))
         return all_dels.sort_values(by='Total', ascending=False)
     
     @property
