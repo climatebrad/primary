@@ -1,0 +1,1167 @@
+{
+  "races": [
+    {
+      "race_id": "ut-45667-2020-03-03",
+      "race_slug": "ut-president-primary-democrat-2020-03-03",
+      "url": "https://www.nytimes.com/interactive/2020/03/03/us/elections/results-utah-president-democrat-primary-election.html",
+      "model_page_url": "https://www.nytimes.com/interactive/2020/03/03/us/elections/forecast-utah-primary.html",
+      "race_type": "president",
+      "election_type": "primary",
+      "election_date": "2020-03-03",
+      "runoff": false,
+      "race_name": "President",
+      "office": "President",
+      "officeid": "P",
+      "race_call_note": "",
+      "nyt_measure_title": "",
+      "nyt_title": "",
+      "seat": "",
+      "seat_name": "",
+      "state_id": "UT",
+      "state_slug": "utah",
+      "state_name": "Utah",
+      "state_nyt_abbrev": "Utah",
+      "state_shape": "horizontal",
+      "party_id": "democrat",
+      "uncontested": false,
+      "report": true,
+      "result": "winner",
+      "result_source": "Edison",
+      "gain": false,
+      "lost_seat": "",
+      "electoral_votes": 0,
+      "poll_display": "Polls close at 10 p.m., Eastern time.",
+      "poll_countdown_display": "Polls close in",
+      "poll_waiting_display": "Polls have closed.",
+      "poll_time": "2020-03-04T03:00:00.000Z",
+      "poll_time_short": "10 p.m.",
+      "precincts_reporting": 587,
+      "precincts_total": 2073,
+      "reporting_display": "28% reporting",
+      "reporting_value": "28%",
+      "eevp": 88,
+      "county_data_source": "edison",
+      "incumbent_party": "",
+      "no_forecast": false,
+      "last_updated": "2020-03-04T09:16:00.000Z",
+      "has_incumbent": false,
+      "delegates": 29,
+      "delegates_allocated": 3,
+      "timestamp_api": "2020-03-04T09:16:02.281Z",
+      "state": "UT",
+      "seat_id": "primary",
+      "geo_type": "counties",
+      "geo_type_mapped": "counties",
+      "force_zeroes": false,
+      "normalize_baseline": false,
+      "create_map_data": true,
+      "n_sims": "1000",
+      "rho_national": "0.14",
+      "alpha_uniform": "1",
+      "alpha_estimates": "4",
+      "beta_var": "50",
+      "variance_multiplier": "1.2",
+      "dem_shift": "0",
+      "ind_shift": "0",
+      "runoff_eligible": false,
+      "winner": "sandersb",
+      "votetype": "",
+      "votes": 175109,
+      "leader": "sandersb",
+      "leader_delegates": "sandersb",
+      "margin": [
+        0.0915,
+        0.1377,
+        0.1645,
+        0.1915,
+        0.221
+      ],
+      "margin_delegates": [
+        0.069,
+        0.1724,
+        0.2414,
+        0.3448,
+        0.5517
+      ],
+      "bidenj_delegates_quantile": [
+        1,
+        5,
+        6.067,
+        8,
+        9
+      ],
+      "bidenj_quantile": [
+        40949,
+        46089,
+        51679.109,
+        56413,
+        65028
+      ],
+      "bloombergm_delegates_quantile": [
+        0,
+        5,
+        5.906,
+        8,
+        9
+      ],
+      "bloombergm_quantile": [
+        40351,
+        45785,
+        50716.268,
+        54893,
+        63755
+      ],
+      "buttigiegp_delegates_quantile": [
+        0,
+        0,
+        0.059,
+        0,
+        0
+      ],
+      "buttigiegp_quantile": [
+        22249,
+        24205,
+        27508.144,
+        29574,
+        36427
+      ],
+      "klobuchara_delegates_quantile": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "klobuchara_quantile": [
+        8835,
+        9877,
+        11733.575,
+        12748,
+        17216
+      ],
+      "other_delegates_quantile": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "other_quantile": [
+        3582,
+        4023,
+        5551.44,
+        6154,
+        10896
+      ],
+      "sandersb_delegates_quantile": [
+        10,
+        12,
+        13.835,
+        15,
+        19
+      ],
+      "sandersb_quantile": [
+        86405,
+        93579,
+        99109.789,
+        104230,
+        113345
+      ],
+      "steyert_delegates_quantile": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "steyert_quantile": [
+        715,
+        1284,
+        1788.981,
+        2206,
+        2949
+      ],
+      "warrene_delegates_quantile": [
+        0,
+        0,
+        3.133,
+        6,
+        8
+      ],
+      "warrene_quantile": [
+        34624,
+        39315,
+        44391.307,
+        48201,
+        57475
+      ],
+      "vote_estimate": 291789,
+      "vote_counted": 175119,
+      "vote_remaining": 116670,
+      "second": "bidenj",
+      "second_delegates": "bidenj",
+      "bidenj_delegates_voteshare": [
+        0.0345,
+        0.1724,
+        0.2092,
+        0.2759,
+        0.3103
+      ],
+      "bidenj_voteshare": [
+        0.1419,
+        0.1592,
+        0.1767,
+        0.1917,
+        0.2203
+      ],
+      "bloombergm_delegates_voteshare": [
+        0,
+        0.1724,
+        0.2037,
+        0.2759,
+        0.3103
+      ],
+      "bloombergm_voteshare": [
+        0.1396,
+        0.1571,
+        0.1734,
+        0.1868,
+        0.2145
+      ],
+      "buttigiegp_delegates_voteshare": [
+        0,
+        0,
+        0.002,
+        0,
+        0
+      ],
+      "buttigiegp_voteshare": [
+        0.0756,
+        0.0834,
+        0.0941,
+        0.1014,
+        0.1239
+      ],
+      "klobuchara_delegates_voteshare": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "klobuchara_voteshare": [
+        0.0304,
+        0.0341,
+        0.0401,
+        0.0435,
+        0.058
+      ],
+      "other_delegates_voteshare": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "other_voteshare": [
+        0.0123,
+        0.0139,
+        0.019,
+        0.0206,
+        0.037
+      ],
+      "sandersb_delegates_voteshare": [
+        0.3448,
+        0.4138,
+        0.4771,
+        0.5172,
+        0.6552
+      ],
+      "sandersb_voteshare": [
+        0.2976,
+        0.3225,
+        0.3389,
+        0.3549,
+        0.3792
+      ],
+      "steyert_delegates_voteshare": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "steyert_voteshare": [
+        0.0024,
+        0.0044,
+        0.0061,
+        0.0075,
+        0.01
+      ],
+      "warrene_delegates_voteshare": [
+        0,
+        0,
+        0.108,
+        0.2069,
+        0.2759
+      ],
+      "warrene_voteshare": [
+        0.1194,
+        0.1355,
+        0.1517,
+        0.165,
+        0.1935
+      ],
+      "bidenj_delegates_tie": 0.006,
+      "bidenj_tie": 0,
+      "bloombergm_delegates_tie": 0.006,
+      "bloombergm_tie": 0,
+      "buttigiegp_delegates_tie": 0,
+      "buttigiegp_tie": 0,
+      "klobuchara_delegates_tie": 0,
+      "klobuchara_tie": 0,
+      "other_delegates_tie": 0,
+      "other_tie": 0,
+      "sandersb_delegates_tie": 0.012,
+      "sandersb_tie": 0,
+      "steyert_delegates_tie": 0,
+      "steyert_tie": 0,
+      "warrene_delegates_tie": 0,
+      "warrene_tie": 0,
+      "bidenj_vote_counted": 30002,
+      "bidenj_vote_estimate": 51707,
+      "bidenj_vote_remaining": 21705,
+      "bloombergm_vote_counted": 29561,
+      "bloombergm_vote_estimate": 50743,
+      "bloombergm_vote_remaining": 21182,
+      "buttigiegp_vote_counted": 17400,
+      "buttigiegp_vote_estimate": 27532,
+      "buttigiegp_vote_remaining": 10132,
+      "klobuchara_vote_counted": 6895,
+      "klobuchara_vote_estimate": 11751,
+      "klobuchara_vote_remaining": 4856,
+      "other_vote_counted": 3098,
+      "other_vote_estimate": 5569,
+      "other_vote_remaining": 2471,
+      "sandersb_vote_counted": 60612,
+      "sandersb_vote_estimate": 99151,
+      "sandersb_vote_remaining": 38539,
+      "steyert_vote_counted": 647,
+      "steyert_vote_estimate": 1728,
+      "steyert_vote_remaining": 1081,
+      "warrene_vote_counted": 26904,
+      "warrene_vote_estimate": 44418,
+      "warrene_vote_remaining": 17514,
+      "bidenj_voteshare_counted": 0.1713,
+      "bloombergm_voteshare_counted": 0.1688,
+      "buttigiegp_voteshare_counted": 0.0994,
+      "klobuchara_voteshare_counted": 0.0394,
+      "other_voteshare_counted": 0.0177,
+      "sandersb_voteshare_counted": 0.3461,
+      "steyert_voteshare_counted": 0.0037,
+      "warrene_voteshare_counted": 0.1536,
+      "bidenj_delegates_wp": 0.006,
+      "bidenj_wp": 0,
+      "bloombergm_delegates_wp": 0.006,
+      "bloombergm_wp": 0,
+      "buttigiegp_delegates_wp": 0,
+      "buttigiegp_wp": 0,
+      "klobuchara_delegates_wp": 0,
+      "klobuchara_wp": 0,
+      "other_delegates_wp": 0,
+      "other_wp": 0,
+      "sandersb_delegates_wp": 1,
+      "sandersb_wp": 1,
+      "steyert_delegates_wp": 0,
+      "steyert_wp": 0,
+      "warrene_delegates_wp": 0,
+      "warrene_wp": 0,
+      "counties": [
+        {
+          "fips": "49001",
+          "name": "Beaver",
+          "votes": 144,
+          "reporting": 0,
+          "precincts": 9,
+          "vote_counted": {
+            "bidenj": 37,
+            "bloombergm": 41,
+            "buttigiegp": 14,
+            "klobuchara": 10,
+            "other": 0,
+            "sandersb": 27,
+            "steyert": 2,
+            "warrene": 13
+          },
+          "vote_remaining": {
+            "bidenj": 41,
+            "bloombergm": 27,
+            "buttigiegp": 12,
+            "klobuchara": 5,
+            "other": 5,
+            "sandersb": 28,
+            "steyert": 2,
+            "warrene": 10
+          }
+        },
+        {
+          "fips": "49003",
+          "name": "Box Elder",
+          "votes": 1333,
+          "reporting": 53,
+          "precincts": 53,
+          "vote_counted": {
+            "bidenj": 296,
+            "bloombergm": 295,
+            "buttigiegp": 135,
+            "klobuchara": 47,
+            "other": 36,
+            "sandersb": 355,
+            "steyert": 14,
+            "warrene": 155
+          },
+          "vote_remaining": {
+            "bidenj": 8,
+            "bloombergm": 5,
+            "buttigiegp": 4,
+            "klobuchara": 3,
+            "other": 2,
+            "sandersb": 15,
+            "steyert": 1,
+            "warrene": 6
+          }
+        },
+        {
+          "fips": "49005",
+          "name": "Cache",
+          "votes": 1450,
+          "reporting": 0,
+          "precincts": 91,
+          "vote_counted": {
+            "bidenj": 120,
+            "bloombergm": 257,
+            "buttigiegp": 174,
+            "klobuchara": 122,
+            "other": 27,
+            "sandersb": 495,
+            "steyert": 5,
+            "warrene": 250
+          },
+          "vote_remaining": {
+            "bidenj": 1075,
+            "bloombergm": 1404,
+            "buttigiegp": 619,
+            "klobuchara": 287,
+            "other": 134,
+            "sandersb": 2865,
+            "steyert": 75,
+            "warrene": 1321
+          }
+        },
+        {
+          "fips": "49007",
+          "name": "Carbon",
+          "votes": 1177,
+          "reporting": 0,
+          "precincts": 20,
+          "vote_counted": {
+            "bidenj": 347,
+            "bloombergm": 247,
+            "buttigiegp": 114,
+            "klobuchara": 48,
+            "other": 29,
+            "sandersb": 246,
+            "steyert": 10,
+            "warrene": 136
+          },
+          "vote_remaining": {
+            "bidenj": 80,
+            "bloombergm": 52,
+            "buttigiegp": 24,
+            "klobuchara": 11,
+            "other": 14,
+            "sandersb": 61,
+            "steyert": 3,
+            "warrene": 13
+          }
+        },
+        {
+          "fips": "49009",
+          "name": "Daggett",
+          "votes": 39,
+          "reporting": 3,
+          "precincts": 3,
+          "vote_counted": {
+            "bidenj": 10,
+            "bloombergm": 7,
+            "buttigiegp": 3,
+            "klobuchara": 2,
+            "other": 0,
+            "sandersb": 13,
+            "steyert": 0,
+            "warrene": 4
+          },
+          "vote_remaining": {
+            "bidenj": 1,
+            "bloombergm": 1,
+            "buttigiegp": 1,
+            "klobuchara": 1,
+            "other": 1,
+            "sandersb": 1,
+            "steyert": 1,
+            "warrene": 1
+          }
+        },
+        {
+          "fips": "49011",
+          "name": "Davis",
+          "votes": 19656,
+          "reporting": 0,
+          "precincts": 212,
+          "vote_counted": {
+            "bidenj": 3678,
+            "bloombergm": 3488,
+            "buttigiegp": 2026,
+            "klobuchara": 768,
+            "other": 450,
+            "sandersb": 6252,
+            "steyert": 81,
+            "warrene": 2913
+          },
+          "vote_remaining": {
+            "bidenj": 2477,
+            "bloombergm": 2250,
+            "buttigiegp": 1160,
+            "klobuchara": 520,
+            "other": 245,
+            "sandersb": 3908,
+            "steyert": 89,
+            "warrene": 1772
+          }
+        },
+        {
+          "fips": "49013",
+          "name": "Duchesne",
+          "votes": 290,
+          "reporting": 0,
+          "precincts": 34,
+          "vote_counted": {
+            "bidenj": 72,
+            "bloombergm": 54,
+            "buttigiegp": 21,
+            "klobuchara": 8,
+            "other": 14,
+            "sandersb": 74,
+            "steyert": 4,
+            "warrene": 43
+          },
+          "vote_remaining": {
+            "bidenj": 68,
+            "bloombergm": 51,
+            "buttigiegp": 24,
+            "klobuchara": 12,
+            "other": 6,
+            "sandersb": 64,
+            "steyert": 4,
+            "warrene": 21
+          }
+        },
+        {
+          "fips": "49015",
+          "name": "Emery",
+          "votes": 195,
+          "reporting": 12,
+          "precincts": 12,
+          "vote_counted": {
+            "bidenj": 50,
+            "bloombergm": 36,
+            "buttigiegp": 22,
+            "klobuchara": 20,
+            "other": 7,
+            "sandersb": 43,
+            "steyert": 2,
+            "warrene": 15
+          },
+          "vote_remaining": {
+            "bidenj": 2,
+            "bloombergm": 2,
+            "buttigiegp": 1,
+            "klobuchara": 1,
+            "other": 1,
+            "sandersb": 3,
+            "steyert": 0,
+            "warrene": 1
+          }
+        },
+        {
+          "fips": "49017",
+          "name": "Garfield",
+          "votes": 225,
+          "reporting": 0,
+          "precincts": 11,
+          "vote_counted": {
+            "bidenj": 25,
+            "bloombergm": 28,
+            "buttigiegp": 21,
+            "klobuchara": 11,
+            "other": 7,
+            "sandersb": 77,
+            "steyert": 1,
+            "warrene": 55
+          },
+          "vote_remaining": {
+            "bidenj": 27,
+            "bloombergm": 30,
+            "buttigiegp": 13,
+            "klobuchara": 8,
+            "other": 4,
+            "sandersb": 44,
+            "steyert": 3,
+            "warrene": 18
+          }
+        },
+        {
+          "fips": "49019",
+          "name": "Grand",
+          "votes": 1414,
+          "reporting": 0,
+          "precincts": 18,
+          "vote_counted": {
+            "bidenj": 208,
+            "bloombergm": 144,
+            "buttigiegp": 101,
+            "klobuchara": 80,
+            "other": 20,
+            "sandersb": 574,
+            "steyert": 2,
+            "warrene": 285
+          },
+          "vote_remaining": {
+            "bidenj": 39,
+            "bloombergm": 71,
+            "buttigiegp": 35,
+            "klobuchara": 19,
+            "other": 8,
+            "sandersb": 86,
+            "steyert": 8,
+            "warrene": 33
+          }
+        },
+        {
+          "fips": "49021",
+          "name": "Iron",
+          "votes": 1482,
+          "reporting": 0,
+          "precincts": 41,
+          "vote_counted": {
+            "bidenj": 317,
+            "bloombergm": 217,
+            "buttigiegp": 141,
+            "klobuchara": 77,
+            "other": 39,
+            "sandersb": 443,
+            "steyert": 7,
+            "warrene": 241
+          },
+          "vote_remaining": {
+            "bidenj": 153,
+            "bloombergm": 161,
+            "buttigiegp": 71,
+            "klobuchara": 36,
+            "other": 16,
+            "sandersb": 307,
+            "steyert": 12,
+            "warrene": 130
+          }
+        },
+        {
+          "fips": "49023",
+          "name": "Juab",
+          "votes": 217,
+          "reporting": 10,
+          "precincts": 10,
+          "vote_counted": {
+            "bidenj": 53,
+            "bloombergm": 64,
+            "buttigiegp": 15,
+            "klobuchara": 9,
+            "other": 6,
+            "sandersb": 51,
+            "steyert": 1,
+            "warrene": 18
+          },
+          "vote_remaining": {
+            "bidenj": 15,
+            "bloombergm": 11,
+            "buttigiegp": 8,
+            "klobuchara": 3,
+            "other": 2,
+            "sandersb": 21,
+            "steyert": 1,
+            "warrene": 9
+          }
+        },
+        {
+          "fips": "49025",
+          "name": "Kane",
+          "votes": 429,
+          "reporting": 2,
+          "precincts": 12,
+          "vote_counted": {
+            "bidenj": 79,
+            "bloombergm": 64,
+            "buttigiegp": 41,
+            "klobuchara": 25,
+            "other": 10,
+            "sandersb": 135,
+            "steyert": 0,
+            "warrene": 75
+          },
+          "vote_remaining": {
+            "bidenj": 55,
+            "bloombergm": 58,
+            "buttigiegp": 23,
+            "klobuchara": 16,
+            "other": 5,
+            "sandersb": 74,
+            "steyert": 6,
+            "warrene": 34
+          }
+        },
+        {
+          "fips": "49027",
+          "name": "Millard",
+          "votes": 207,
+          "reporting": 17,
+          "precincts": 17,
+          "vote_counted": {
+            "bidenj": 54,
+            "bloombergm": 59,
+            "buttigiegp": 21,
+            "klobuchara": 17,
+            "other": 8,
+            "sandersb": 25,
+            "steyert": 2,
+            "warrene": 21
+          },
+          "vote_remaining": {
+            "bidenj": 2,
+            "bloombergm": 1,
+            "buttigiegp": 1,
+            "klobuchara": 1,
+            "other": 1,
+            "sandersb": 3,
+            "steyert": 1,
+            "warrene": 1
+          }
+        },
+        {
+          "fips": "49029",
+          "name": "Morgan",
+          "votes": 327,
+          "reporting": 0,
+          "precincts": 15,
+          "vote_counted": {
+            "bidenj": 80,
+            "bloombergm": 62,
+            "buttigiegp": 26,
+            "klobuchara": 25,
+            "other": 15,
+            "sandersb": 80,
+            "steyert": 1,
+            "warrene": 38
+          },
+          "vote_remaining": {
+            "bidenj": 86,
+            "bloombergm": 80,
+            "buttigiegp": 37,
+            "klobuchara": 17,
+            "other": 7,
+            "sandersb": 99,
+            "steyert": 5,
+            "warrene": 54
+          }
+        },
+        {
+          "fips": "49031",
+          "name": "Piute",
+          "votes": 25,
+          "reporting": 5,
+          "precincts": 5,
+          "vote_counted": {
+            "bidenj": 5,
+            "bloombergm": 7,
+            "buttigiegp": 3,
+            "klobuchara": 2,
+            "other": 2,
+            "sandersb": 4,
+            "steyert": 0,
+            "warrene": 2
+          },
+          "vote_remaining": {
+            "bidenj": 1,
+            "bloombergm": 0,
+            "buttigiegp": 1,
+            "klobuchara": 0,
+            "other": 0,
+            "sandersb": 2,
+            "steyert": 0,
+            "warrene": 1
+          }
+        },
+        {
+          "fips": "49033",
+          "name": "Rich",
+          "votes": 53,
+          "reporting": 5,
+          "precincts": 5,
+          "vote_counted": {
+            "bidenj": 20,
+            "bloombergm": 7,
+            "buttigiegp": 6,
+            "klobuchara": 3,
+            "other": 0,
+            "sandersb": 12,
+            "steyert": 1,
+            "warrene": 4
+          },
+          "vote_remaining": {
+            "bidenj": 4,
+            "bloombergm": 3,
+            "buttigiegp": 1,
+            "klobuchara": 1,
+            "other": 1,
+            "sandersb": 3,
+            "steyert": 0,
+            "warrene": 2
+          }
+        },
+        {
+          "fips": "49035",
+          "name": "Salt Lake",
+          "votes": 92803,
+          "reporting": 0,
+          "precincts": 741,
+          "vote_counted": {
+            "bidenj": 14028,
+            "bloombergm": 15287,
+            "buttigiegp": 9701,
+            "klobuchara": 3343,
+            "other": 1117,
+            "sandersb": 34529,
+            "steyert": 286,
+            "warrene": 14512
+          },
+          "vote_remaining": {
+            "bidenj": 15840,
+            "bloombergm": 15401,
+            "buttigiegp": 6954,
+            "klobuchara": 3482,
+            "other": 1833,
+            "sandersb": 27575,
+            "steyert": 796,
+            "warrene": 12655
+          }
+        },
+        {
+          "fips": "49037",
+          "name": "San Juan",
+          "votes": 758,
+          "reporting": 7,
+          "precincts": 12,
+          "vote_counted": {
+            "bidenj": 131,
+            "bloombergm": 143,
+            "buttigiegp": 43,
+            "klobuchara": 19,
+            "other": 44,
+            "sandersb": 312,
+            "steyert": 6,
+            "warrene": 60
+          },
+          "vote_remaining": {
+            "bidenj": 263,
+            "bloombergm": 161,
+            "buttigiegp": 76,
+            "klobuchara": 28,
+            "other": 23,
+            "sandersb": 252,
+            "steyert": 12,
+            "warrene": 88
+          }
+        },
+        {
+          "fips": "49039",
+          "name": "Sanpete",
+          "votes": 532,
+          "reporting": 28,
+          "precincts": 28,
+          "vote_counted": {
+            "bidenj": 86,
+            "bloombergm": 84,
+            "buttigiegp": 54,
+            "klobuchara": 30,
+            "other": 15,
+            "sandersb": 180,
+            "steyert": 5,
+            "warrene": 78
+          },
+          "vote_remaining": {
+            "bidenj": 11,
+            "bloombergm": 12,
+            "buttigiegp": 5,
+            "klobuchara": 2,
+            "other": 1,
+            "sandersb": 22,
+            "steyert": 1,
+            "warrene": 7
+          }
+        },
+        {
+          "fips": "49041",
+          "name": "Sevier",
+          "votes": 342,
+          "reporting": 23,
+          "precincts": 23,
+          "vote_counted": {
+            "bidenj": 82,
+            "bloombergm": 83,
+            "buttigiegp": 32,
+            "klobuchara": 17,
+            "other": 4,
+            "sandersb": 82,
+            "steyert": 2,
+            "warrene": 40
+          },
+          "vote_remaining": {
+            "bidenj": 3,
+            "bloombergm": 1,
+            "buttigiegp": 1,
+            "klobuchara": 1,
+            "other": 1,
+            "sandersb": 4,
+            "steyert": 1,
+            "warrene": 1
+          }
+        },
+        {
+          "fips": "49043",
+          "name": "Summit",
+          "votes": 4835,
+          "reporting": 45,
+          "precincts": 45,
+          "vote_counted": {
+            "bidenj": 876,
+            "bloombergm": 1288,
+            "buttigiegp": 684,
+            "klobuchara": 282,
+            "other": 40,
+            "sandersb": 942,
+            "steyert": 20,
+            "warrene": 703
+          },
+          "vote_remaining": {
+            "bidenj": 42,
+            "bloombergm": 9,
+            "buttigiegp": 8,
+            "klobuchara": 10,
+            "other": 7,
+            "sandersb": 37,
+            "steyert": 1,
+            "warrene": 24
+          }
+        },
+        {
+          "fips": "49045",
+          "name": "Tooele",
+          "votes": 2666,
+          "reporting": 62,
+          "precincts": 62,
+          "vote_counted": {
+            "bidenj": 579,
+            "bloombergm": 515,
+            "buttigiegp": 226,
+            "klobuchara": 79,
+            "other": 68,
+            "sandersb": 870,
+            "steyert": 6,
+            "warrene": 323
+          },
+          "vote_remaining": {
+            "bidenj": 18,
+            "bloombergm": 10,
+            "buttigiegp": 10,
+            "klobuchara": 4,
+            "other": 3,
+            "sandersb": 25,
+            "steyert": 2,
+            "warrene": 8
+          }
+        },
+        {
+          "fips": "49047",
+          "name": "Uintah",
+          "votes": 829,
+          "reporting": 26,
+          "precincts": 26,
+          "vote_counted": {
+            "bidenj": 143,
+            "bloombergm": 122,
+            "buttigiegp": 87,
+            "klobuchara": 40,
+            "other": 157,
+            "sandersb": 186,
+            "steyert": 4,
+            "warrene": 90
+          },
+          "vote_remaining": {
+            "bidenj": 8,
+            "bloombergm": 5,
+            "buttigiegp": 2,
+            "klobuchara": 1,
+            "other": 1,
+            "sandersb": 9,
+            "steyert": 1,
+            "warrene": 2
+          }
+        },
+        {
+          "fips": "49049",
+          "name": "Utah",
+          "votes": 21305,
+          "reporting": 0,
+          "precincts": 279,
+          "vote_counted": {
+            "bidenj": 3955,
+            "bloombergm": 2630,
+            "buttigiegp": 1485,
+            "klobuchara": 804,
+            "other": 623,
+            "sandersb": 7769,
+            "steyert": 62,
+            "warrene": 3977
+          },
+          "vote_remaining": {
+            "bidenj": 1284,
+            "bloombergm": 1318,
+            "buttigiegp": 996,
+            "klobuchara": 366,
+            "other": 130,
+            "sandersb": 2917,
+            "steyert": 50,
+            "warrene": 1257
+          }
+        },
+        {
+          "fips": "49051",
+          "name": "Wasatch",
+          "votes": 2082,
+          "reporting": 38,
+          "precincts": 38,
+          "vote_counted": {
+            "bidenj": 455,
+            "bloombergm": 452,
+            "buttigiegp": 205,
+            "klobuchara": 71,
+            "other": 39,
+            "sandersb": 594,
+            "steyert": 6,
+            "warrene": 260
+          },
+          "vote_remaining": {
+            "bidenj": 10,
+            "bloombergm": 8,
+            "buttigiegp": 7,
+            "klobuchara": 6,
+            "other": 2,
+            "sandersb": 16,
+            "steyert": 1,
+            "warrene": 11
+          }
+        },
+        {
+          "fips": "49053",
+          "name": "Washington",
+          "votes": 7886,
+          "reporting": 90,
+          "precincts": 90,
+          "vote_counted": {
+            "bidenj": 1807,
+            "bloombergm": 1654,
+            "buttigiegp": 869,
+            "klobuchara": 506,
+            "other": 137,
+            "sandersb": 1906,
+            "steyert": 71,
+            "warrene": 936
+          },
+          "vote_remaining": {
+            "bidenj": 0,
+            "bloombergm": 0,
+            "buttigiegp": 0,
+            "klobuchara": 0,
+            "other": 0,
+            "sandersb": 0,
+            "steyert": 0,
+            "warrene": 0
+          }
+        },
+        {
+          "fips": "49055",
+          "name": "Wayne",
+          "votes": 156,
+          "reporting": 7,
+          "precincts": 7,
+          "vote_counted": {
+            "bidenj": 22,
+            "bloombergm": 27,
+            "buttigiegp": 13,
+            "klobuchara": 13,
+            "other": 3,
+            "sandersb": 43,
+            "steyert": 1,
+            "warrene": 34
+          },
+          "vote_remaining": {
+            "bidenj": 3,
+            "bloombergm": 2,
+            "buttigiegp": 1,
+            "klobuchara": 0,
+            "other": 1,
+            "sandersb": 1,
+            "steyert": 1,
+            "warrene": 0
+          }
+        },
+        {
+          "fips": "49057",
+          "name": "Weber",
+          "votes": 12262,
+          "reporting": 154,
+          "precincts": 154,
+          "vote_counted": {
+            "bidenj": 2387,
+            "bloombergm": 2199,
+            "buttigiegp": 1117,
+            "klobuchara": 417,
+            "other": 181,
+            "sandersb": 4293,
+            "steyert": 45,
+            "warrene": 1623
+          },
+          "vote_remaining": {
+            "bidenj": 89,
+            "bloombergm": 48,
+            "buttigiegp": 37,
+            "klobuchara": 15,
+            "other": 17,
+            "sandersb": 97,
+            "steyert": 4,
+            "warrene": 34
+          }
+        }
+      ]
+    }
+  ],
+  "timestamp": "2020-03-04 09:16:07"
+}
